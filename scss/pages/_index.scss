@@ -17,6 +17,7 @@ $theme: (
         justify-content: flex-start;
         flex-direction: row;
         padding-left: 50px;
+        padding-right: 18px;
     }
     &__btn {
         position: relative;
@@ -66,7 +67,8 @@ $theme: (
         margin-top: 18px;
         @media (min-width: 768px) {
             width: 128px;
-            margin: 0 18px;
+            margin-top: 0;
+            margin-left: 18px;
         }
     }
 }
