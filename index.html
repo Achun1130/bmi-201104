@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="BMI自動計算(體重身高指數)男女理想身材,標準範圍">
+    <meta property="og:title" content="BMI 身高體重指數">
+    <meta property="og:description" content="BMI自動計算(體重身高指數)男女理想身材,標準範圍">
+    <meta property="og:image" content="https://upload.cc/i1/2020/11/02/aSu1yp.png">
+    <meta property="og:type" content="website">
+    <title>BMI 身高體重指數</title>
+    <link rel="shortcut icon" href="img/BMICLogo-footer.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header class="bg-dark py-75">
+        <div class="container px-md-0 px-3">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md mb-md-0 mb-3">
+                            <h1 class="sr-only">BMI calculatort</h1>
+                            <a href="index.html" class="d-block text-center">
+                                <img src="img/BMICLogo.png" alt="BMICLogo" width="117" height="117">
+                            </a>
+                        </div>
+                        <div class="col-md mb-md-0 mb-3">
+                            <div class="form-group">
+                                <label for="height">身高 cm</label>
+                                <input type="number" id="height" placeholder="請輸入身高" class="form-control" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">體重 kg</label>
+                                <input type="number" id="weight" placeholder="請輸入體重" class="form-control" min="1">
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <div class="p-test">
+                                <a href="#" class="p-test__btn">
+                                    <span class="p-test__btn__text">看結果</span>
+                                    <span class="p-test__btn__subtitle">BMI</span>
+                                    <div class="p-test__btn__icon">
+                                        <img src="img/icons_loop.png" alt="icons_loop" width="14" height="19">
+                                    </div>
+                                </a>
+                                <h3 class="p-test__title"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container px-md-2 px-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mb-58">
+                <h2 class="h4 text-center mt-48 mb-36">BMI 紀錄</h2>
+                <p class="h4 text-center" id="listInitId"></p>
+                <div class="overflow-auto">
+                    <table class="w-100">
+                        <tbody id="listId">
+                            <!-- <tr class="p-list p-list--sm">
+                                <td class="p-list__item" width="120">理想</td>
+                                <td class="p-list__item"><span class="p-list__small">BMI</span>70kg</td>
+                                <td class="p-list__item"><span class="p-list__small">weight</span>70kg</td>
+                                <td class="p-list__item"><span class="p-list__small">height</span>180cm</td>
+                                <td class="p-list__item" width="100"><span class="p-list__small">06-19-2017</span></td>
+                                <td class="p-list__item"><span class="material-icons">
+                                    remove_circle_outline
+                                    </span>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary text-center py-3">
+        <img src="img/BMICLogo-footer.png" alt="BMICLogo-footer" width="55" height="55">
+    </footer>
+    <script src="js/all.js"></script>
+</body>
+</html>
