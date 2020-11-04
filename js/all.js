@@ -60,50 +60,36 @@ function calculate(e) {
     bmi = bmi.toFixed(2);
 
     defBmi(bmi);
+    test.classList.add('p-test--' + size)
+    text.textContent = bmi;
+    title.textContent = type;
+
     getDate();
     addList(height, weight, bmi, type, size, time);
 }
 
 function defBmi(num) {
     if (num < 18.5) {
-        test.classList.add('p-test--sm')
-        text.textContent = num;
-        title.textContent = '過輕';
         size = 'sm';
         type = '過輕'
         return type, size;
     } else if (18.5 <= num && num < 25) {
-        test.classList.add('p-test--md')
-        text.textContent = num;
-        title.textContent = '理想';
         size = 'md';
         type = '理想'
         return type, size;
     } else if (25 <= num && num < 30) {
-        test.classList.add('p-test--lg')
-        text.textContent = num;
-        title.textContent = '過重';
         size = 'lg';
         type = '過重'
         return type, size;
     } else if (30 <= num && num < 35) {
-        test.classList.add('p-test--xl')
-        text.textContent = num;
-        title.textContent = '輕度肥胖';
         size = 'xl';
         type = '輕度肥胖'
         return type, size;
     } else if (35 <= num && num < 40) {
-        test.classList.add('p-test--xl')
-        text.textContent = num;
-        title.textContent = '中度肥胖';
         size = 'xl';
         type = '中度肥胖'
         return type, size;
     } else if (num >= 40) {
-        test.classList.add('p-test--2l')
-        text.textContent = num;
-        title.textContent = '重度肥胖';
         size = '2l';
         type = '重度肥胖'
         return type, size;
