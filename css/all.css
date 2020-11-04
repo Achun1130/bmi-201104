@@ -12565,7 +12565,6 @@ main {
     justify-content: flex-start;
     flex-direction: row;
     padding-left: 50px;
-    padding-right: 18px;
   }
 }
 
@@ -12620,13 +12619,13 @@ main {
   line-height: 1;
   margin-bottom: 0;
   margin-top: 18px;
+  white-space: wrap;
 }
 
 @media (min-width: 768px) {
   .p-test__title {
     width: 128px;
-    margin-top: 0;
-    margin-left: 18px;
+    margin: 0 18px;
   }
 }
 
